@@ -1,0 +1,104 @@
+extends layouts/default
+block config
+	- var siteTitle = "Contact";
+	- var bodyClass = "Contact";
+block content
+	section#breadcrumb
+		.container
+			.row
+				.col-xs-12
+					h1.page-title
+						| Contact
+					ul.breadcrumb
+						li
+							a(href="")
+								| Home
+						li.active
+							a(href="")
+								| Contact
+					img.feature-image(src="assets/images/contact-page-title.png")
+	section.main#main
+		.container.contact-region
+			.row
+				.col-xs-12.col-sm-6.contact-block
+					.contact-item
+						h3
+							| Lorem ipsum dolor sit amet, coctetur 
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis efficitur elit, eu iaculis elit. Pellentesque semper congue urna, in imperdiet quam hendrerit vel. Maecenas ut metus id nulla dignissim convallis at sed orci. Vivamus molestie eleifend ornare.
+					.contact-item
+						p 
+							| 10-54 Salonika Street,
+							br 
+							| The Gardens NT 0820
+						p 
+							| LMB 13 Darwin NT 0801
+							br 
+							| CRICOS Provider No: 00466K
+
+				.col-xs-12.col-sm-6.contact-block
+					.block-constructs-content
+						form.contact-form#contact-form
+							.form-group
+								label(for="firstname" )
+									| First name
+								input.form-control(placeholder="First name" type="text" id="firstname" name="firstname" )
+							.form-group
+								label(for="lastname")
+									| Last name
+								input.form-control(placeholder="Last name" type="text" id="lastname" name="lastname")
+							.form-group
+								label(for="message")
+									| Message
+								textarea.form-control(placeholder="Message" id="message" name="message")
+							.form-group
+								button.submit.btn.btn-default(type="submit") 
+									| Submit									
+	section.region.region-footer
+		.container-fluid
+			.row
+				.col-xs-12.col-sm-4.col-md-4
+					.block
+						h3
+							| Stay in touch
+						p
+							| Sign up to our newsletter. Get our lastest news and opinion pieces ahead of he crowd
+						form.newsletter
+							.newsletter-form-group
+								input.form-control(placeholder="your name" type="text")
+								button(type="submit")
+									| Next
+				.col-xs-12.col-sm-4.col-md-4
+					.block
+						h3
+							| Get Connected
+						p
+							| Stay in the picture. Follow us on Facebook and LinkedIn to read our news and share questions, opinions and advice
+						.social-block
+							ul
+								li
+									a(href="")
+										i.fa.fa-facebook
+								li
+									a(href="")
+										i.fa.fa-linkedin
+
+				.col-xs-12.col-sm-4.col-md-4
+					.block
+						h3
+							| Contact us
+						.location-block
+							i.fa.fa-map-marker
+							p 
+								| 10-54 Salonika Street,
+								br 
+								| The Gardens NT 0820
+							p 
+								| LMB 13 Darwin NT 0801
+								br 
+								| CRICOS Provider No: 00466K
+
+
+
+
+			

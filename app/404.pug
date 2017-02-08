@@ -1,0 +1,9 @@
+extends layouts/default-404
+block config
+	- var siteTitle = "404";
+	- var bodyClass = "page-404";
+block content					
+	section.main#main
+		#content-404
+			a(href="index.html" class="backtohome")
+				| Back to the homepage

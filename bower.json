@@ -1,0 +1,28 @@
+{
+  "name": "nodejs",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "jQuery": "2.2.4",
+    "slick-carousel": "^1.6.0",
+    "font-awesome": "fontawesome#^4.6.3",
+    "jQuery.mmenu": "mmenu#^5.7.8",
+    "stickyjs": "*",
+    "jquery-mixitup": "^3.1.6",
+    "masonry": "^4.1.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

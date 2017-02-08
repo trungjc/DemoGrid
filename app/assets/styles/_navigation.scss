@@ -1,0 +1,36 @@
+.navbar-nav {
+	li a {
+		color: $menu-color; 
+	}
+	.dropdown-menu {
+		min-width: 200px;
+		li a{
+			&:hover,&:focus,&:active {
+				background: $link-color;
+				color: white; 
+			}
+		}
+	}
+	> li {
+		> a {
+			padding: 15px 17px;
+			&.current {
+				color: $link-color;
+				position: relative;
+				&:after {
+					content:"";
+					display: block;
+					width: 0;  
+					bottom: -31px;
+					left: 50%;
+					position: absolute;
+					@include translateX(-50%);
+					height: 0; 
+					border-left: 14px solid transparent;
+					border-right: 14px solid transparent;
+					border-bottom: 14px solid $link-color;
+				}
+			}
+		}
+	}
+}

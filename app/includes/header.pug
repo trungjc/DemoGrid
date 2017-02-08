@@ -1,0 +1,34 @@
+- var menus = [{text: 'About Us', link: '#'}, {text: 'What we do',link:"#",submenu: [{text: 'Item 1 ', link: '#',submenu: [{text: 'Item A', link: '#'}, {text: 'Item B', link: '#'}, {text: 'Item C', link: '#'}, {text: 'Item D', link: '#'}]}, {text: 'Item 2', link: '#'}, {text: 'Item 3', link: '#'}, {text: 'Item 4', link: '#'}, {text: 'Item 5', link: '#'}] }, {text: 'Industry Trends', link:"#"}, {text: 'Insights', link: '#'},{text: 'Consultations', link: '#'},{text: 'Contact', link: 'contact.html'}];
+
+header.header#header
+	nav.navbar#slide-nav
+		.container
+			.row
+				.navbar-header
+					button.navbar-toggle#menu-button
+						span.sr-only
+							| Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand.logo(href="index.html")
+						img(src="assets/images/logo.png")
+				#menu_nav.collapse.navbar-collapse
+					ul.nav.navbar-nav.pull-right
+						each value,key in menus
+							if value.submenu
+								li.menu-item.dropdown.parent
+									a(data-toggle="dropdown" href=value.link)= value.text
+									ul.dropdown-menu.sub-menu
+										each subvalue in value.submenu
+											li.menu-item
+												a(href=subvalue.link)= subvalue.text
+							else
+								li.menu-item
+									if selected === value.link
+										a.current(href=value.link)= value.text
+									else
+										a(href=value.link)= value.text
+
+					
+					

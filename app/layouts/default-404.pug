@@ -1,0 +1,9 @@
+block config
+	include ../includes/config
+doctype html
+html.no-js
+	include ../includes/head.pug
+	body(class=bodyClass)
+		#page
+			include ../includes/header-404.pug
+			block content

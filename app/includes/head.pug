@@ -1,0 +1,24 @@
+head
+	meta(charset='utf-8')
+	title #{siteTitle}
+	meta(name='description' content='')
+	meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+	link(rel="shortcut icon", href="favicon.ico" type="image/x-icon")
+	// Place favicon.ico and apple-touch-icon.png in the root directory
+
+	// build:css assets/styles/vendor.css
+	// bower:css
+	// endbower
+	// endbuild
+
+	// build:css assets/styles/main.css
+	link(rel='stylesheet' href='assets/styles/bootstrap.css')
+	link(rel='stylesheet' href='bower_components/slick-carousel/slick/slick.css')
+	link(rel='stylesheet' href='bower_components/slick-carousel/slick/slick-theme.css')
+	link(rel='stylesheet' href='bower_components/jQuery.mmenu/dist/css/jquery.mmenu.all.css')
+	link(rel='stylesheet' href='assets/styles/main.css')
+	// endbuild 
+
+	// build:js assets/scripts/modernizr.js
+	script(type='text/javascript' src='../bower_components/modernizr/modernizr.js')
+	// endbuild

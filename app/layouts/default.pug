@@ -1,0 +1,13 @@
+block config
+	include ../includes/config
+doctype html
+html.no-js
+	include ../includes/head.pug
+	body(class=bodyClass)
+		block menumobile
+		include ../includes/menu-mobile.pug
+		#page
+			include ../includes/header.pug
+			block content
+			include ../includes/footer.pug
+	include ../includes/bottom.pug
