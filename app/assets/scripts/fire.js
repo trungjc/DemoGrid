@@ -3,9 +3,9 @@ $(function () {
     FE.global.init();
 });
 
-$(window).load(function () {
+/*$(window).load(function () {
    // FE.global.loaded();
-});
+});*/
 
 // Window resize
 var width = $(window).width();

@@ -1,49 +1,41 @@
 .filter-box
 	.button-filter.dropdown
-		a(data-toggle="dropdown" href="#" )
-			| Industry
-		ul.dropdown-menu 
-			li
-				a( href="javascript:void(0)"  data-filter=".Mining_and_construction")
-					| Mining and construction
-			li
-				a( href="javascript:void(0)"  data-filter=".Industry")
-					| Industry
-			li
-				a( href="javascript:void(0)"  data-filter=".Business")
-					| Business
+		select.selectpicker
+			option(value=".Mining_and_construction")  Mining and construction
+			option(value=".Industry") Industry
+			option(value=".Business") Business
 
 	.button-filter.dropdown
 		a(data-toggle="dropdown" href="#" )
 			| Topic
 		ul.dropdown-menu 
 			li
-				a( href="javascript:void(0)"  data-filter=".Mining_and_construction")
+				a(class="filter" data-filter=".Mining_and_construction")
 					| Mining and construction
 			li
-				a( href="javascript:void(0)"  data-filter=".Industry")
+				a(class="filter" data-filter=".Industry")
 					| Industry
 			li
-				a( href="javascript:void(0)"  data-filter=".Business")
-					| Business
+				a(class="filter" data-filter=".Business")
+					| Industry
 	.button-filter.dropdown
 		a(data-toggle="dropdown" href="#" )
 			| Region
 		ul.dropdown-menu 
 			li
-				a( href="javascript:void(0)"  data-filter=".Mining_and_construction")
+				a(class="filter" data-filter=".Mining_and_construction")
 					| Mining and construction
 			li
-				a( href="javascript:void(0)"  data-filter=".Industry")
+				a(class="filter" data-filter=".Industry")
 					| Industry
 			li
-				a( href="javascript:void(0)"  data-filter=".Business")
+				a(class="filter" data-filter=".Business")
 					| Business
 .filter-label
 	| Insights by Industry
 
-.grid
-	.grid-item.Mining_and_construction
+#grid-masonry.grid-masonry
+	.grid-item.mix.Mining_and_construction
 		.panel
 			.image
 				img(src="assets/images/img01.png")
@@ -58,7 +50,7 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.Industry
+	.grid-item.mix.Industry
 		.panel
 			.image
 			.category
@@ -72,7 +64,7 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.Business
+	.grid-item.mix.Business
 		.panel
 			.image
 				img(src="assets/images/img01.png")
@@ -86,7 +78,7 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.Mining_and_construction
+	.grid-item.mix.Mining_and_construction
 		.panel
 			.image
 				img(src="assets/images/img01.png")
@@ -101,7 +93,7 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.Industry
+	.grid-item.mix.Industry
 		.panel
 			.image
 			.category
@@ -115,7 +107,7 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.Business
+	.grid-item.mix.Business
 		.panel
 			.image
 				img(src="assets/images/img01.png")
@@ -130,5 +122,5 @@
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
 .loadmore
-	a(href="")
+	a#view-more(href="")
 		| View more

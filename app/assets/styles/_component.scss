@@ -21,7 +21,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	&:after {
+/* 	&:after {
 		content :"";
 		display: block;
 		width: 4px;
@@ -31,7 +31,7 @@
 		left: 50%;
 		@include translateX(-50%)
 		bottom: -23px;
-	}
+	} */
 	.feature-image {
 		display: none;
 	}
@@ -74,10 +74,10 @@
 			content :"";
 			display: block;
 			position: absolute;
-			width: 40%;
+			width: 56%;
 			height: 4px;
 			background: $link-color;
-			bottom: -10px;
+			bottom: -20px;
 			left: 50%;
 			@include translateX(-50%)
 		}
@@ -86,6 +86,7 @@
 
 .section {
 	padding: 73px 0;
+	position: relative;
 	h3,h1,h2 {
 		text-align: center;
 	}
@@ -138,8 +139,8 @@
 			list-style: none;
 			padding: 0;
 			li {
-				padding: 18px 20px;
-				border-bottom: 1px solid $text-color;
+				padding: 15px 20px;
+				border-bottom: 1px solid #d8d8d8;
 				&:last-child {
 					border: none;
 				}
@@ -152,4 +153,53 @@
 			text-transform: uppercase;
 		}
 	}
+}
+.slash {
+	position: absolute;
+	@include translateX(-50%);
+	left: 50%;
+	background: white;
+	height: 40px;
+	width: 4px;
+	top: -20px;
+}
+
+.panel {
+	border: none;
+	box-shadow: none;
+	text-align: left;
+	.image:empty {
+		margin: 0 0 20px;
+	}
+	.panel-body {
+		p {
+			margin: 0;
+		}
+	}
+	h3 {
+		text-align: left;
+	}
+	.panel-footer {
+		padding:  0 20px 20px;
+	}
+}
+
+.grid-masonry {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-moz-column-gap: 1.5em;
+	-webkit-column-gap: 1.5em;
+	-webkit-backface-visibility: hidden;
+	column-gap: 1.5em;
+	overflow: hidden;
+  .grid-item {
+		text-align: left;
+		vertical-align: top;
+		width: 100%;
+		padding: 10px;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-origin: 50% 0;
+		display: inline-block;
+  }
 }

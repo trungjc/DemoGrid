@@ -100,32 +100,66 @@ var FE = {
             });
         },
         helpslider: function() {
-
-            $('.help-sticker').slick({
+            var $slick = $('.help-sticker');
+            $slick.slick({
                 infinite: true,
                 arrows: true,
                 autoplay: false,
                 dots: false,
                 slidesToShow: 1
-            });     
+            }); 
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                e.target; // newly activated tab
+                $slick.slick('unslick');
+                $slick.slick({
+                    infinite: true,
+                    arrows: true,
+                    autoplay: false,
+                    dots: false,
+                    slidesToShow: 1
+                }); 
+                $('.help-sticker').unslick();
+                e.relatedTarget; // previous active tab
+            })    
         },
-
-        masonry:function() {
-            //if ($(window).width() >= 768) {
-                $('.grid').masonry({
-                  // options
-                  itemSelector: '.grid-item',
-                  columnWidth: 190
+        selectpickerStyle: function() {
+             $('.selectpicker').selectpicker({
+                  style: 'btn-info',
+                  size: 4
                 });
-           // }
+
+         },
+        filterData:function() {
+            var $filterSelect = $('.selectpicker'),
+            $container = $('#grid-masonry');
+            var mixer = mixitup($container, {
+              selectors: {
+                target: '.mix',
+                control: '[data-mixitup-control]'
+              }
+             
+            });
+
+            $filterSelect.on('change', function(){
+                $container.mixItUp('filter', this.value);
+            });
             
         },
+        viewMore: function() {
+            $('#view-more').on('click',function(e){
+                e.preventDefault();
+
+                var html='<div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="category"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div><div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="category"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div>';
+                var container =  $('#grid-masonry');
+                container.append(html);
+                //destroy mixItup 
+                container.mixItUp('destroy');
+                //init mixitup function again
+                FE.global.filterData();
+            });
+        },
         menuMobile: function() {
-          /* var myaccount= $('#myaccount > ul > li').clone();
-               if(! $('#menu-mobile-parent').find('.item-account').length) {
-                 $('#menu-mobile-parent').prepend(myaccount);
-               }*/
-            //if (isMobileScreen()) {
+          
                 $('#menu-mobile').mmenu({
                     offCanvas : {
                         position : "left", // changing this alters the position of the menu
@@ -136,14 +170,7 @@ var FE = {
                 $('#menu-button').click(function() {
                     API.open();
                 })
-                /*$('#menu-mobile').mmenu({
-                   'slidingSubmenus': true,
-                   'offCanvas': {
-                        'position': 'left'
-                     }
-                });*/
-               
-         //   } 
+                
         },
         sliderArticle: function() {
            $('#consultants .list-consultants').slick({
@@ -189,9 +216,11 @@ var FE = {
             //FE.global.slider();
             FE.global.sliderArticle();
             FE.global.helpslider();
+            FE.global.selectpickerStyle();
+            FE.global.viewMore();
            // FE.global.stickyHeader();
             FE.global.menuMobile();
-            FE.global.masonry();
+            FE.global.filterData();
             FE.global.validateForm();
         },
         loaded: function() {

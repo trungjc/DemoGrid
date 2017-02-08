@@ -112,9 +112,11 @@ gulp.task('vendor-js', () => {
             'bower_components/stickyjs/stickyjs.js',
             'bower_components/slick-carousel/slick/slick.min.js',
             'bower_components/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
-            'bower_components/jQuery.mmenu/dist/masonry.pkgd.min.js',
-            'https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js',
-            'https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js',
+            
+            'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
+            'bower_components/jquery-mixitup/dist/mixitup.min.js',
+            'bower_components/jquery-validation/dist/jquery.validate.min.js',
+            'bower_components/jquery-validation/dist/additional-methods.min.js',
         ])
         .pipe(concat('vendor.js'))
         .pipe($.plumber())
