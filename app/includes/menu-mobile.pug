@@ -1,7 +1,10 @@
 - var menus = [{text: 'About Us', link: '#'}, {text: 'What we do',link:"#",submenu: [{text: 'Item 1 ', link: '#'}, {text: 'Item 2', link: '#',submenu: [{text: 'Item A', link: '#'}, {text: 'Item B', link: '#'}, {text: 'Item C', link: '#'}, {text: 'Item D', link: '#'}]}, {text: 'Item 3', link: '#'}, {text: 'Item 4', link: '#'}, {text: 'Item 5', link: '#'}] }, {text: 'Industry Trends', link:"#"}, {text: 'Insights', link: '#'},{text: 'Consultations', link: '#'},{text: 'Contact', link: 'contact.html'}];
 
 
-#menu-mobile
+#menu-mobile(style="display:none")
+	.navbar-header
+		a.navbar-brand.logo(href="index.html")
+			img(src="assets/images/logo.png")
 	ul
 		each value,key in menus
 			if value.submenu

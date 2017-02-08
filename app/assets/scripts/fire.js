@@ -4,7 +4,7 @@ $(function () {
 });
 
 $(window).load(function () {
-    FE.global.loaded();
+   // FE.global.loaded();
 });
 
 // Window resize

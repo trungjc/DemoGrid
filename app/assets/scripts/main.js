@@ -101,11 +101,14 @@ var FE = {
             });
         },
         masonry:function() {
-            $('.grid').masonry({
-              // options
-              itemSelector: '.grid-item',
-              columnWidth: 190
-            });
+            //if ($(window).width() >= 768) {
+                $('.grid').masonry({
+                  // options
+                  itemSelector: '.grid-item',
+                  columnWidth: 190
+                });
+           // }
+            
         },
         menuMobile: function() {
           /* var myaccount= $('#myaccount > ul > li').clone();
@@ -182,6 +185,8 @@ var FE = {
         },
         resize: function() {
           //   FE.global.menuMobile();
+         // console.log('reszing....');
+          //FE.global.masonry();
         },
         scroll: function() {
             

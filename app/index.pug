@@ -1,6 +1,238 @@
 extends layouts/default
 block content
 	include includes/hero.pug
+	section.help-region
+		.container
+			.row
+				.col-xs-12
+					h3 How can we help you today?
+					.tab-section
+						ul.nav.nav-tabs
+							li.active
+								a(data-toggle="tab" href="#employers")
+									| employers
+							li
+								a(data-toggle="tab" href="#employees")
+									| Employess
+							li
+								a(data-toggle="tab" href="#RTOs")
+									| RTOs
+							li
+								a(data-toggle="tab" href="#associations")
+									| Associations
+							li
+								a(data-toggle="tab" href="#career-advisors")
+									| Carrer Advisors
+						div.tab-content
+							div#employers.tab-pane.fade.in.active
+								div.col-xs-12.col-md-4
+									.help-sticker
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+								div.col-xs-12.col-md-4
+									.text-content
+										h3 I’M LOOKING TO...
+										ul
+											li 
+												a(href="")
+													| Employ migrant workers
+											li 
+												a(href="")
+													| Get help with recruitment and retention
+											li 
+												a(href="")
+													| Find training opportunities for my staff
+											li 
+												a(href="")
+													| List a job as high demand
+								div.col-xs-12.col-md-4
+									.contact-info
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact01.png" alt="" )
+											.media-body
+												.text
+													p Learn more about the value of VET in the workplace.
+													a.more(href="")
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact02.png" alt="")
+											.media-body
+												.text
+													p Improve your business.Talk to an Industry Engagement Officer today.
+													a.more(href="")  
+
+
+							div#employees.tab-pane.fade
+								div.col-xs-12.col-md-4
+									.help-sticker
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+								div.col-xs-12.col-md-4
+									.text-content
+										h3 I’M LOOKING TO...
+										ul
+											li 
+												a(href="")
+													| Employ migrant workers
+											li 
+												a(href="")
+													| Get help with recruitment and retention
+											li 
+												a(href="")
+													| Find training opportunities for my staff
+											li 
+												a(href="")
+													| List a job as high demand
+								div.col-xs-12.col-md-4
+									.contact-info
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact01.png" alt="" )
+											.media-body
+												.text
+													p Learn more about the value of VET in the workplace.
+													a.more(href="")
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact02.png" alt="")
+											.media-body
+												.text
+													p Improve your business.Talk to an Industry Engagement Officer today.
+													a.more(href="")
+							div#RTOs.tab-pane.fade
+								div.col-xs-12.col-md-4
+									.help-sticker
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+								div.col-xs-12.col-md-4
+									.text-content
+										h3 I’M LOOKING TO...
+										ul
+											li 
+												a(href="")
+													| Employ migrant workers
+											li 
+												a(href="")
+													| Get help with recruitment and retention
+											li 
+												a(href="")
+													| Find training opportunities for my staff
+											li 
+												a(href="")
+													| List a job as high demand
+								div.col-xs-12.col-md-4
+									.contact-info
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact01.png" alt="" )
+											.media-body
+												.text
+													p Learn more about the value of VET in the workplace.
+													a.more(href="")
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact02.png" alt="")
+											.media-body
+												.text
+													p Improve your business.Talk to an Industry Engagement Officer today.
+													a.more(href="")
+							div#associations.tab-pane.fade
+								div.col-xs-12.col-md-4
+									.help-sticker
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+								div.col-xs-12.col-md-4
+									.text-content
+										h3 I’M LOOKING TO...
+										ul
+											li 
+												a(href="")
+													| Employ migrant workers
+											li 
+												a(href="")
+													| Get help with recruitment and retention
+											li 
+												a(href="")
+													| Find training opportunities for my staff
+											li 
+												a(href="")
+													| List a job as high demand
+								div.col-xs-12.col-md-4
+									.contact-info
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact01.png" alt="" )
+											.media-body
+												.text
+													p Learn more about the value of VET in the workplace.
+													a.more(href="")
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact02.png" alt="")
+											.media-body
+												.text
+													p Improve your business.Talk to an Industry Engagement Officer today.
+													a.more(href="")
+							div#career-advisors.tab-pane.fade
+								div.col-xs-12.col-md-4
+									.help-sticker
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+										div
+											img(src="assets/images/help-img01.png" alt="")
+											p Helping build a skilled workforce for Territory businesses
+								div.col-xs-12.col-md-4
+									.text-content
+										h3 I’M LOOKING TO...
+										ul
+											li 
+												a(href="")
+													| Employ migrant workers
+											li 
+												a(href="")
+													| Get help with recruitment and retention
+											li 
+												a(href="")
+													| Find training opportunities for my staff
+											li 
+												a(href="")
+													| List a job as high demand
+								div.col-xs-12.col-md-4
+									.contact-info
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact01.png" alt="" )
+											.media-body
+												.text
+													p Learn more about the value of VET in the workplace.
+													a.more(href="")
+										.media
+											.media-left.media-middle
+												img(class="media-object" src="assets/images/contact02.png" alt="")
+											.media-body
+												.text
+													p Improve your business.Talk to an Industry Engagement Officer today.
+													a.more(href="")
+
+
 	section.new-block#insights
 		.container
 			.row

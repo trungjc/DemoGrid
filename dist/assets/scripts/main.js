@@ -65,11 +65,19 @@ var FE = {
                 htmlClass = a + b + c + d + e;
             $('html').addClass(htmlClass);
         },
-        replaceImgToBackground: function replaceImgToBackground(img) {
+        replaceImgToBackgroundBreadcumb: function replaceImgToBackgroundBreadcumb(img) {
             $(img).each(function () {
                 if ($(this).css('visibility') == 'visible') {
                     $(this).css({ 'visibility': 'hidden', 'opacity': '0' });
                     $(this).closest('#breadcrumb').addClass('container-background').css('background-image', 'url(' + $(this).attr('src') + ')');
+                };
+            });
+        },
+        replaceImgToBackground: function replaceImgToBackground(img) {
+            $(img).each(function () {
+                if ($(this).css('visibility') == 'visible') {
+                    $(this).css({ 'visibility': 'hidden', 'opacity': '0' });
+                    $(this).closest('.bg-container').addClass('container-background').css('background-image', 'url(' + $(this).attr('src') + ')');
                 };
             });
         },
@@ -88,6 +96,13 @@ var FE = {
                         autoplay: true
                     }
                 }]
+            });
+        },
+        masonry: function masonry() {
+            $('.grid').masonry({
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 190
             });
         },
         menuMobile: function menuMobile() {
@@ -111,12 +126,12 @@ var FE = {
             //   } 
         },
         sliderArticle: function sliderArticle() {
-            $('.sticker-article').slick({
+            $('#consultants .list-consultants').slick({
                 arrows: true,
                 autoplay: false,
                 dots: false,
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 responsive: [{
                     breakpoint: 767,
                     settings: {
@@ -146,11 +161,13 @@ var FE = {
             // $("#header").sticky({topSpacing:0});
         },
         init: function init() {
+            //  FE.global.replaceImgToBackgroundBreadcumb('.feature-image');
             FE.global.replaceImgToBackground('.feature-image');
             //FE.global.slider();
-            //FE.global.sliderArticle();
+            FE.global.sliderArticle();
             // FE.global.stickyHeader();
             FE.global.menuMobile();
+            FE.global.masonry();
             FE.global.validateForm();
         },
         loaded: function loaded() {
