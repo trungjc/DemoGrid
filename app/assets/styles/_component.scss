@@ -25,12 +25,12 @@
 		content :"";
 		display: block;
 		width: 4px;
-		height: 60px;
+		height: 46px;
 		background: white;
 		position: absolute;
 		left: 50%;
 		@include translateX(-50%)
-		bottom: -30px;
+		bottom: -23px;
 	}
 	.feature-image {
 		display: none;
@@ -84,6 +84,13 @@
 	}
 }
 
+.section {
+	padding: 73px 0;
+	h3,h1,h2 {
+		text-align: center;
+	}
+}
+
 .content {
 	background: white;
 	padding: 20px;
@@ -91,3 +98,58 @@
 }
 
 
+.nav-tabs {
+	border: none;
+	li {
+		width: 20%;
+		min-height: 180px;
+		text-align: center;
+		&.active {
+			a {
+				margin-top: 34px;
+			}
+		}
+	}
+	a {
+		text-transform: capitalize;
+		color: white!important;
+		font-size: 24px;
+		border: none!important;
+		background: none!important;
+		padding: 0 10px !important;
+		img {
+			display: block; 
+			margin: 0px auto 30px;
+		}
+	}
+}
+
+.tab-pane {
+	color: $text-color;
+
+	padding: 10px;
+	background: white;
+	position: relative;
+	.text-content {
+		h3 {
+			font-size: 24px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				padding: 18px 20px;
+				border-bottom: 1px solid $text-color;
+				&:last-child {
+					border: none;
+				}
+				a {
+
+				}
+			}
+		}
+		h3 {
+			text-transform: uppercase;
+		}
+	}
+}

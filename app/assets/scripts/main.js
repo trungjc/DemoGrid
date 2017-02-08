@@ -85,7 +85,6 @@ var FE = {
            $('.hero-slider').slick({
                 infinite: true,
                 arrows: false,
-                vertical: true,
                 autoplay: false,
                 dots: true,
                 slidesToShow: 1,
@@ -100,6 +99,17 @@ var FE = {
                 ],
             });
         },
+        helpslider: function() {
+
+            $('.help-sticker').slick({
+                infinite: true,
+                arrows: true,
+                autoplay: false,
+                dots: false,
+                slidesToShow: 1
+            });     
+        },
+
         masonry:function() {
             //if ($(window).width() >= 768) {
                 $('.grid').masonry({
@@ -116,7 +126,12 @@ var FE = {
                  $('#menu-mobile-parent').prepend(myaccount);
                }*/
             //if (isMobileScreen()) {
-                $('#menu-mobile').mmenu();
+                $('#menu-mobile').mmenu({
+                    offCanvas : {
+                        position : "left", // changing this alters the position of the menu
+                        zposition : "front"
+                    }
+                });
                 var API = $('#menu-mobile').data('mmenu');
                 $('#menu-button').click(function() {
                     API.open();
@@ -173,6 +188,7 @@ var FE = {
             FE.global.replaceImgToBackground('.feature-image');
             //FE.global.slider();
             FE.global.sliderArticle();
+            FE.global.helpslider();
            // FE.global.stickyHeader();
             FE.global.menuMobile();
             FE.global.masonry();

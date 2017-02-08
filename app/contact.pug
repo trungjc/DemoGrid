@@ -3,7 +3,7 @@ block config
 	- var siteTitle = "Contact";
 	- var bodyClass = "Contact";
 block content
-	section#breadcrumb
+	section#breadcrumb.bg-container
 		.container
 			.row
 				.col-xs-12
@@ -53,51 +53,8 @@ block content
 								textarea.form-control(placeholder="Message" id="message" name="message")
 							.form-group
 								button.submit.btn.btn-default(type="submit") 
-									| Submit									
-	section.region.region-footer
-		.container-fluid
-			.row
-				.col-xs-12.col-sm-4.col-md-4
-					.block
-						h3
-							| Stay in touch
-						p
-							| Sign up to our newsletter. Get our lastest news and opinion pieces ahead of he crowd
-						form.newsletter
-							.newsletter-form-group
-								input.form-control(placeholder="your name" type="text")
-								button(type="submit")
-									| Next
-				.col-xs-12.col-sm-4.col-md-4
-					.block
-						h3
-							| Get Connected
-						p
-							| Stay in the picture. Follow us on Facebook and LinkedIn to read our news and share questions, opinions and advice
-						.social-block
-							ul
-								li
-									a(href="")
-										i.fa.fa-facebook
-								li
-									a(href="")
-										i.fa.fa-linkedin
-
-				.col-xs-12.col-sm-4.col-md-4
-					.block
-						h3
-							| Contact us
-						.location-block
-							i.fa.fa-map-marker
-							p 
-								| 10-54 Salonika Street,
-								br 
-								| The Gardens NT 0820
-							p 
-								| LMB 13 Darwin NT 0801
-								br 
-								| CRICOS Provider No: 00466K
-
+									| Submit
+	include includes/region-footer.pug
 
 
 
