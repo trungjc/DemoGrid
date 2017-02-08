@@ -150,7 +150,7 @@ var FE = {
         },
         
         validateForm: function() {
-            $( "#contact-form" ).validate( {
+            $( '#contact-form' ).validate( {
               rules: {
                 firstname: {
                   required: true

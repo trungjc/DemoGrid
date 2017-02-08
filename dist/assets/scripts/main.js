@@ -99,11 +99,13 @@ var FE = {
             });
         },
         masonry: function masonry() {
+            //if ($(window).width() >= 768) {
             $('.grid').masonry({
                 // options
                 itemSelector: '.grid-item',
                 columnWidth: 190
             });
+            // }
         },
         menuMobile: function menuMobile() {
             /* var myaccount= $('#myaccount > ul > li').clone();
@@ -143,7 +145,7 @@ var FE = {
         },
 
         validateForm: function validateForm() {
-            $("#contact-form").validate({
+            $('#contact-form').validate({
                 rules: {
                     firstname: {
                         required: true
@@ -177,6 +179,8 @@ var FE = {
         },
         resize: function resize() {
             //   FE.global.menuMobile();
+            // console.log('reszing....');
+            //FE.global.masonry();
         },
         scroll: function scroll() {}
     }
@@ -187,7 +191,7 @@ $(function () {
 });
 
 $(window).load(function () {
-    FE.global.loaded();
+    // FE.global.loaded();
 });
 
 // Window resize

@@ -3,8 +3,8 @@
 
 header.header#header
 	nav.navbar#slide-nav
-		.container
-			.row
+		.container-fluid
+			.rows
 				.navbar-header
 					button.navbar-toggle#menu-button
 						span.sr-only
@@ -15,20 +15,21 @@ header.header#header
 					a.navbar-brand.logo(href="index.html")
 						img(src="assets/images/logo.png")
 				#menu_nav.collapse.navbar-collapse
-					ul.nav.navbar-nav.pull-right
+					ul.nav.navbar-nav.pull-right.no-bullet
 						each value,key in menus
 							if value.submenu
 								li.menu-item.dropdown.parent
 									a(data-toggle="dropdown" href=value.link)= value.text
-									ul.dropdown-menu.sub-menu.level1
-										each subvalue in value.submenu
-											li.menu-item
-												a(href=subvalue.link)= subvalue.text
-												if subvalue.submenu
-													ul.sub-menu.level2
-														each subvalue1 in subvalue.submenu
-															li.menu-item
-																a(href=subvalue1.link)= subvalue1.text
+									div.dropdown-menu.sub-menu.level1
+										ul.no-bullet
+											each subvalue in value.submenu
+												li.menu-item
+													a(href=subvalue.link)= subvalue.text
+													if subvalue.submenu
+														ul.sub-menu.level2.no-bullet
+															each subvalue1 in subvalue.submenu
+																li.menu-item
+																	a(href=subvalue1.link)= subvalue1.text
 							else
 								li.menu-item
 									if selected === value.link

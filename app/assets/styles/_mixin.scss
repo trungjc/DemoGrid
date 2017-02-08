@@ -162,6 +162,7 @@
 // Breakpoint
 $lg-width: 1200px;
 $md-width: 1025px;
+$md-tablet: 991px;
 $sm-width: 768px;
 $xxs-width: 481px;
 @mixin lg {
@@ -181,7 +182,11 @@ $xxs-width: 481px;
         @content;
     }
 }
-
+@mixin md_tablet {
+    @media screen and (max-width: #{$md_tablet}) {
+        @content;
+    }
+}
 @mixin xs {
     @media screen and (max-width: #{$sm-width - 1px}) {
         @content;

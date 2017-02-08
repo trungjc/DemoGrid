@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>AOA</title>
+    <title>Isacnt</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -11,276 +11,590 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <script src="assets/scripts/modernizr.js"></script>
   </head>
-  <body ontouchstart="">
+  <body class="home">
+    <div id="menu-mobile" style="display:none;">
+      <div class="navbar-header"><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a></div>
+      <ul>
+        <li class="menu-item"><a href="#">About Us</a>
+        </li>
+        <li class="menu-item"><a href="#">What we do</a>
+          <ul class="sub-menu">
+            <li class="menu-item"><a href="#">Item 1 </a>
+            </li>
+            <li class="menu-item"><a href="#">Item 2</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">Item 3</a>
+            </li>
+            <li class="menu-item"><a href="#">Item 4</a>
+            </li>
+            <li class="menu-item"><a href="#">Item 5</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Industry Trends</a>
+        </li>
+        <li class="menu-item"><a href="#">Insights</a>
+        </li>
+        <li class="menu-item"><a href="#">Consultations</a>
+        </li>
+        <li class="menu-item"><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div id="page">
-      <nav id="menu-mobile">
-        <form class="navbar-form" id="search-box-mobile">
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="Search...">
-            <button class="btn btn-default" type="submit"> <i class="fa fa-search"></i></button>
-          </div>
-        </form>
-        <ul id="menu-mobile-parent">
-          <li class="dropdown parent"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About <span class="caret"></span></a>
-            <ul class="dropdown-menu sub-menu level-1">
-              <li><a href="#">About AOA</a></li>
-              <li><a href="#">AOA Strategic Plan 2016–2018</a></li>
-              <li><a href="#">AOA Research Strategic Plan 2016–2021</a></li>
-              <li><a href="#">Board of directors</a></li>
-              <li><a href="#">Board committees</a></li>
-              <li><a href="#">Communications</a></li>
-              <li><a href="#">State branches</a></li>
-              <li class="parent"><a href="#">AOA Bodies <span class="caret"></span></a>
-                <ul class="dropdown-menu sub-menu level-2">
-                  <li><a href="#">AOA NJRR</a></li>
-                  <li><a href="#">Research Foundation</a></li>
-                  <li><a href="#">Orthopaedic Outreach</a></li>
-                  <li><a href="#">OWL</a></li>
-                </ul>
-              </li>
-              <li><a href="#">News & Media</a></li>
-              <li><a href="#">Honours & Awards</a></li>
-              <li><a href="#">Contact AOA</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Musculoskeletal Research</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </nav>
       <header class="header" id="header">
-        <div class="header-top">
-          <div class="container"><a class="navbar-brand" href="" title=""><img src="assets/images/logo.png" alt=""></a>
-            <div class="navbar-header pull-right"><a class="navbar-toggle collapsed" href="#menu-mobile"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div>
-            <div class="clearfix hidden-xs hidden-xs">
-              <div class="account pull-right" id="myaccount">
-                <ul>
-                  <li class="login item-account"><a href="" title="">Log in</a></li>
-                </ul>
-              </div>
-              <form class="navbar-form pull-right" id="search-box">
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Search...">
-                  <button class="btn btn-default" type="submit"> <i class="fa fa-search"></i></button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="main-menu">
+        <nav class="navbar" id="slide-nav">
           <div class="container">
-            <nav class="navbar navbar-default">
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+              <div class="navbar-header">
+                <button class="navbar-toggle" id="menu-button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a>
+              </div>
+              <div class="collapse navbar-collapse" id="menu_nav">
                 <ul class="nav navbar-nav pull-right">
-                  <li class="dropdown parent"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About <span class="caret"></span></a>
-                    <ul class="dropdown-menu sub-menu level-1">
-                      <li><a href="#">About AOA</a></li>
-                      <li><a href="#">AOA Strategic Plan 2016–2018</a></li>
-                      <li><a href="#">AOA Research Strategic Plan 2016–2021</a></li>
-                      <li><a href="#">Board of directors</a></li>
-                      <li><a href="#">Board committees</a></li>
-                      <li><a href="#">Communications</a></li>
-                      <li><a href="#">State branches</a></li>
-                      <li class="parent"><a href="#">AOA Bodies <span class="caret"></span></a>
-                        <ul class="dropdown-menu sub-menu level-2">
-                          <li><a href="#">AOA NJRR</a></li>
-                          <li><a href="#">Research Foundation</a></li>
-                          <li><a href="#">Orthopaedic Outreach</a></li>
-                          <li><a href="#">OWL</a></li>
+                  <li class="menu-item"><a href="#">About Us</a>
+                  </li>
+                  <li class="menu-item dropdown parent"><a data-toggle="dropdown" href="#">What we do</a>
+                    <ul class="dropdown-menu sub-menu level1">
+                      <li class="menu-item"><a href="#">Item 1 </a>
+                        <ul class="sub-menu level2">
+                          <li class="menu-item"><a href="#">Item A</a></li>
+                          <li class="menu-item"><a href="#">Item B</a></li>
+                          <li class="menu-item"><a href="#">Item C</a></li>
+                          <li class="menu-item"><a href="#">Item D</a></li>
                         </ul>
                       </li>
-                      <li><a href="#">News & Media</a></li>
-                      <li><a href="#">Honours & Awards</a></li>
-                      <li><a href="#">Contact AOA</a></li>
-                      <li><a href="#">Resources</a></li>
-                      <li><a href="#">Musculoskeletal Research</a></li>
+                      <li class="menu-item"><a href="#">Item 2</a>
+                        <ul class="sub-menu level2">
+                          <li class="menu-item"><a href="#">Item A</a></li>
+                          <li class="menu-item"><a href="#">Item B</a></li>
+                          <li class="menu-item"><a href="#">Item C</a></li>
+                          <li class="menu-item"><a href="#">Item D</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item"><a href="#">Item 3</a>
+                        <ul class="sub-menu level2">
+                          <li class="menu-item"><a href="#">Item A</a></li>
+                          <li class="menu-item"><a href="#">Item B</a></li>
+                          <li class="menu-item"><a href="#">Item C</a></li>
+                          <li class="menu-item"><a href="#">Item D</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item"><a href="#">Item 4</a>
+                        <ul class="sub-menu level2">
+                          <li class="menu-item"><a href="#">Item A</a></li>
+                          <li class="menu-item"><a href="#">Item B</a></li>
+                          <li class="menu-item"><a href="#">Item C</a></li>
+                          <li class="menu-item"><a href="#">Item D</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item"><a href="#">Item 5</a>
+                        <ul class="sub-menu level2">
+                          <li class="menu-item"><a href="#">Item A</a></li>
+                          <li class="menu-item"><a href="#">Item B</a></li>
+                          <li class="menu-item"><a href="#">Item C</a></li>
+                          <li class="menu-item"><a href="#">Item D</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
-                  <li><a href="#">Research</a></li>
-                  <li><a href="#">Training</a></li>
-                  <li><a href="#">Community</a></li>
-                  <li><a href="#">Events</a></li>
+                  <li class="menu-item"><a href="#">Industry Trends</a>
+                  </li>
+                  <li class="menu-item"><a href="#">Insights</a>
+                  </li>
+                  <li class="menu-item"><a href="#">Consultations</a>
+                  </li>
+                  <li class="menu-item"><a href="contact.html">Contact</a>
+                  </li>
                 </ul>
               </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <section class="hero">
-        <div class="hero-slider">
-          <div>
-            <div class="image"><img src="assets/images/slider-1.png" alt=""></div>
-            <div class="content">
-              <div class="container">
-                <h1>#COE2016</h1>
-                <p>Bringing a major educational event<br>to the heart of the country.</p><a class="readmore btn btn-default" href="" title="">Read more</a>
-              </div>
             </div>
           </div>
-          <div>
-            <div class="image"><img src="assets/images/slider-1.png" alt=""></div>
-            <div class="content">
-              <div class="container">
-                <h1>#COE2016</h1>
-                <p>Bringing a major educational event<br>to the heart of the country.</p><a class="readmore btn btn-default" href="" title="">Read more</a>
+        </nav>
+      </header>
+      <section class="bg-container" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12"><img class="feature-image" src="assets/images/hero-img.png" alt="">
+              <div class="hero-content">
+                <p>
+                   We provide advice on skills shortages, vocational education and industry training to support Territory businesses in their pursuit for high caliber candidates.</p><a class="findmore" href="">Find out more</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="main">
-        <section class="member">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-4">
-                <div class="panel panel-default">
-                  <div class="panel-heading">I’m a member</div>
-                  <div class="panel-body">
-                    <ul>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>My AOD</a></li>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>CPD</a></li>
-                    </ul>
+      <section class="help-region">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>How can we help you today?</h3>
+              <div class="tab-section">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#employers">employers</a></li>
+                  <li><a data-toggle="tab" href="#employees">Employess</a></li>
+                  <li><a data-toggle="tab" href="#RTOs">RTOs</a></li>
+                  <li><a data-toggle="tab" href="#associations">Associations</a></li>
+                  <li><a data-toggle="tab" href="#career-advisors">Carrer Advisors</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="employers">
+                    <div class="col-xs-12 col-md-4">
+                      <div class="help-sticker">
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="text-content">
+                        <h3>I’M LOOKING TO...</h3>
+                        <ul>
+                          <li> <a href="">Employ migrant workers</a></li>
+                          <li> <a href="">Get help with recruitment and retention</a></li>
+                          <li> <a href="">Find training opportunities for my staff</a></li>
+                          <li> <a href="">List a job as high demand</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="contact-info">
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="panel panel-default">
-                  <div class="panel-heading">I’m a trainee</div>
-                  <div class="panel-body">
-                    <ul>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>Learn@AOA</a></li>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>TIMS</a></li>
-                    </ul>
+                  <div class="tab-pane fade" id="employees">
+                    <div class="col-xs-12 col-md-4">
+                      <div class="help-sticker">
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="text-content">
+                        <h3>I’M LOOKING TO...</h3>
+                        <ul>
+                          <li> <a href="">Employ migrant workers</a></li>
+                          <li> <a href="">Get help with recruitment and retention</a></li>
+                          <li> <a href="">Find training opportunities for my staff</a></li>
+                          <li> <a href="">List a job as high demand</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="contact-info">
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <div class="panel panel-default">
-                  <div class="panel-heading">I’m a patient</div>
-                  <div class="panel-body">
-                    <ul>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>Find a surgeon</a></li>
-                      <li> <a href="" title=""> <i class="fa fa-chevron-right"></i>Procedure info</a></li>
-                    </ul>
+                  <div class="tab-pane fade" id="RTOs">
+                    <div class="col-xs-12 col-md-4">
+                      <div class="help-sticker">
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="text-content">
+                        <h3>I’M LOOKING TO...</h3>
+                        <ul>
+                          <li> <a href="">Employ migrant workers</a></li>
+                          <li> <a href="">Get help with recruitment and retention</a></li>
+                          <li> <a href="">Find training opportunities for my staff</a></li>
+                          <li> <a href="">List a job as high demand</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="contact-info">
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="associations">
+                    <div class="col-xs-12 col-md-4">
+                      <div class="help-sticker">
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="text-content">
+                        <h3>I’M LOOKING TO...</h3>
+                        <ul>
+                          <li> <a href="">Employ migrant workers</a></li>
+                          <li> <a href="">Get help with recruitment and retention</a></li>
+                          <li> <a href="">Find training opportunities for my staff</a></li>
+                          <li> <a href="">List a job as high demand</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="contact-info">
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="career-advisors">
+                    <div class="col-xs-12 col-md-4">
+                      <div class="help-sticker">
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                        <div><img src="assets/images/help-img01.png" alt="">
+                          <p>Helping build a skilled workforce for Territory businesses</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="text-content">
+                        <h3>I’M LOOKING TO...</h3>
+                        <ul>
+                          <li> <a href="">Employ migrant workers</a></li>
+                          <li> <a href="">Get help with recruitment and retention</a></li>
+                          <li> <a href="">Find training opportunities for my staff</a></li>
+                          <li> <a href="">List a job as high demand</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <div class="contact-info">
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                          <div class="media-body">
+                            <div class="text">
+                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="post-lastest">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-4 feature-post">
-                <div class="article-item"><a href="" title=""><img src="assets/images/calmes-image.png" alt=""></a>
-                  <div class="article-item-content">
-                    <h3>
-                       #ASM16 - Cairnes</h3>
-                    <p>Have you booked yet?</p><a class="readmore btn btn-default">
-                       Read more</a>
+        </div>
+      </section>
+      <section class="new-block" id="insights">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <h3>Insights</h3>
+              <div class="filter-box">
+                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Industry</a>
+                  <ul class="dropdown-menu"> 
+                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
+                  </ul>
+                </div>
+                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Topic</a>
+                  <ul class="dropdown-menu"> 
+                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
+                  </ul>
+                </div>
+                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Region</a>
+                  <ul class="dropdown-menu"> 
+                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
+                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-label">Insights by Industry</div>
+              <div class="grid">
+                <div class="grid-item Mining_and_construction">
+                  <div class="panel">
+                    <div class="image"><img src="assets/images/img01.png"></div>
+                    <div class="category"><a class="orage" href="">Mining and construction</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
+                  </div>
+                </div>
+                <div class="grid-item Industry">
+                  <div class="panel">
+                    <div class="image"></div>
+                    <div class="category"><a class="blue" href="">
+                         Industry</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
+                  </div>
+                </div>
+                <div class="grid-item Business">
+                  <div class="panel">
+                    <div class="image"><img src="assets/images/img01.png"></div>
+                    <div class="category"><a class="grey" href="">Business</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
+                  </div>
+                </div>
+                <div class="grid-item Mining_and_construction">
+                  <div class="panel">
+                    <div class="image"><img src="assets/images/img01.png"></div>
+                    <div class="category"><a class="orage" href="">Mining and construction</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
+                  </div>
+                </div>
+                <div class="grid-item Industry">
+                  <div class="panel">
+                    <div class="image"></div>
+                    <div class="category"><a class="light-blue" href="">
+                         Industry</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
+                  </div>
+                </div>
+                <div class="grid-item Business">
+                  <div class="panel">
+                    <div class="image"><img src="assets/images/img01.png"></div>
+                    <div class="category"><a class="grey" href="">Business</a></div>
+                    <div class="panel-body">
+                      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
+                    </div>
+                    <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-8 sticker-article-carrosel">
-                <div class="sticker-article">
-                  <div class="article-item"><a href="" title=""><img src="assets/images/annyversary-image.png" alt=""></a>
-                    <div class="article-item-content">
-                      <h3>
-                         Celebrating 80 years</h3>
-                      <p>AOA turns 80 this year, and we’d like you to help us celebrate…</p><a class="readmore btn btn-default">
-                         Read more</a>
-                    </div>
+              <div class="loadmore"><a href="">View more</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consultants" id="consultants">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Insights from Industry Engagement Officers</h3>
+              <div class="list-consultants">
+                <div>
+                  <div class="image"><a href=""> <img src="assets/images/person01.png" alt=""></a></div>
+                  <div class="text">
+                    <div class="name">katarina Smith</div>
+                    <div class="role">Mining and construction</div>
+                    <div class="title">Title job</div>
                   </div>
-                  <div class="article-item"><a href="" title=""><img src="assets/images/members-in-media-image.png" alt=""></a>
-                    <div class="article-item-content">
-                      <h3>
-                         Members in Media</h3>
-                      <p>Peter Choong’s work on robotic limbs was profiled by ABC and 9 news</p><a class="readmore btn btn-default">
-                         Read more</a>
-                    </div>
+                </div>
+                <div>
+                  <div class="image"><a href=""> <img src="assets/images/person01.png" alt=""></a></div>
+                  <div class="text">
+                    <div class="name">katarina Smith</div>
+                    <div class="role">Mining and construction</div>
+                    <div class="title">Title job</div>
                   </div>
-                  <div class="article-item"><a href="" title=""><img src="assets/images/annyversary-image.png" alt=""></a>
-                    <div class="article-item-content">
-                      <h3>
-                         Celebrating 80 years</h3>
-                      <p>AOA turns 80 this year, and we’d like you to help us celebrate…</p><a class="readmore btn btn-default">
-                         Read more</a>
-                    </div>
+                </div>
+                <div>
+                  <div class="image"><a href=""> <img src="assets/images/person01.png" alt=""></a></div>
+                  <div class="text">
+                    <div class="name">katarina Smith</div>
+                    <div class="role">Mining and construction</div>
+                    <div class="title">Title job</div>
                   </div>
-                  <div class="article-item"><a href="" title=""><img src="assets/images/members-in-media-image.png" alt=""></a>
-                    <div class="article-item-content">
-                      <h3>
-                         Members in Media</h3>
-                      <p>Peter Choong’s work on robotic limbs was profiled by ABC and 9 news</p><a class="readmore btn btn-default">
-                         Read more</a>
-                    </div>
+                </div>
+                <div>
+                  <div class="image"><a href=""> <img src="assets/images/person01.png" alt=""></a></div>
+                  <div class="text">
+                    <div class="name">katarina Smith</div>
+                    <div class="role">Mining and construction</div>
+                    <div class="title">Title job</div>
                   </div>
+                </div>
+              </div>
+              <div class="loadmore"><a href="">view all</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="industry" id="industry">
+        <h3>Industry Trends</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="text">
+                <h4><sup>$</sup><span>6</span>b</h4>
+                <p>Mineral & Petroleum<br>Production P/A</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="text">
+                <h4><span>25%</span>increase</h4>
+                <p>In exports between<br>2010 - 2015</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="text">
+                <h4><span>213,17</span></h4>
+                <p>People employed<br>across the industries</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="text">
+                <h4><sup>$</sup><span>237.5</span>m</h4>
+                <p>Dispersed in<br>royalties</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="region">
+        <div class="container-fluid">
+          <div class="row region-footer flex-block">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="block">
+                <h3>Stay in touch</h3>
+                <p>Sign up to our newsletter. Get our lastest news and opinion pieces ahead of he crowd</p>
+                <form class="newsletter">
+                  <div class="newsletter-form-group">
+                    <input class="form-control" placeholder="your name" type="text">
+                    <button type="submit">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="block">
+                <h3>Get Connected</h3>
+                <p>Stay in the picture. Follow us on Facebook and LinkedIn to read our news and share questions, opinions and advice</p>
+                <div class="social-block">
+                  <ul>
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="block">
+                <h3>Contact us</h3>
+                <div class="location-block"><i class="fa fa-map-marker"></i>
+                  <p>
+                     10-54 Salonika Street,<br>The Gardens NT 0820</p>
+                  <p>
+                     LMB 13 Darwin NT 0801<br>CRICOS Provider No: 00466K</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="widget-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-md-3 col-sm-6"><a class="card-box" href="" title="">
-                  <div class="img"><img src="assets/images/AOA21.png" alt=""></div>
-                  <div class="card-box-content">
-                    <h3>AOA 21</h3>
-                    <p>Improving patient care through world-class surgical training.</p>
-                  </div></a></div>
-              <div class="col-xs-12 col-md-3 col-sm-6"><a class="card-box" href="" title="">
-                  <div class="img"><img src="assets/images/advocacy-engagement.png" alt=""></div>
-                  <div class="card-box-content">
-                    <h3>Advocacy & Engagement</h3>
-                    <p>Advocating key priorities locally, nationally and internationally.</p>
-                  </div></a></div>
-              <div class="col-xs-12 col-md-3 col-sm-6"><a class="card-box" href="" title="">
-                  <div class="img"><img src="assets/images/world-map.png" alt=""></div>
-                  <div class="card-box-content">
-                    <h3>Asia-Pacific</h3>
-                    <p>Supporting humanitarian initiatives throughout the region.</p>
-                  </div></a></div>
-              <div class="col-xs-12 col-md-3 col-sm-6"><a class="card-box" href="" title="">
-                  <div class="img"><img src="assets/images/standar-research.png" alt=""></div>
-                  <div class="card-box-content">
-                    <h3>Standards & Research</h3>
-                    <p>Facilitating evidence-based medicine and professional standards.</p>
-                  </div></a></div>
-            </div>
-          </div>
-        </section>
+        </div>
       </section>
       <footer class="footer">
-        <div class="menu-bottom">
+        <div class="footer-top">
           <div class="container">
-            <ul>
+            <ul class="navbar-footer">
               <li><a href="" title="">
-                   AOANJRR </a></li>
-              <li><a href="" title="">AOA Research Foundation</a></li>
+                   Disclaimer</a></li>
+              <li><a href="" title="">Privacy Policy</a></li>
               <li><a href="" title="">
-                   Orthopaedic Outreach</a></li>
+                   Website by Captovate</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="social">
-          <div class="container">
-            <ul>
-              <li><a href="" title=""><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="" title=""><i class="fa fa-facebook-official"></i></a></li>
-              <li><a href="" title=""><i class="fa fa-twitter"></i></a></li>
-              <li><a href="" title=""><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="contact-info">
-          <div class="container">
-            <p>Australian Orthopaedic Association, Level 12, Clarence St, Sydney, NSW, Australia, 2000</p>
-            <p>Phone: <a href="tel:+61 8071 8002">+61 8071 8000 &nbsp;&nbsp;</a><br>Fax: <a href="tel:+61 8071 8002">+61 8071 8002 &nbsp;&nbsp;</a><br>Email: <a class="link" href="mailto:admin@aoa.org.au">
-                 admin@aoa.org.au</a></p>
+            <div class="copyright">&copy; 2016</div>
           </div>
         </div>
       </footer>

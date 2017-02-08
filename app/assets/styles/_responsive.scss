@@ -1,4 +1,21 @@
-
+//responsive 991
+@include md_tablet{
+	#menu_nav{
+		display:none!important;
+	}
+	#menu-button{
+		display: block;
+	}
+	.navbar-toggle .icon-bar{
+		width:24px;
+		height:2px;
+		border-radius: 2px;
+		background-color:$link-color;
+	}
+	.navbar-header{
+		width:100%;
+	}
+}
 //responsive 767
 @include xs {
 	.grid-item {
@@ -7,5 +24,4 @@
 	.flex-block {
 		display: block;
 	}
-
 }
