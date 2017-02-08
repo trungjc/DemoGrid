@@ -347,14 +347,3 @@
 .flex-block {
 	display: flex;
 }
-
-//responsive 767
-@include xs {
-	.grid-item {
-		width: 100%;
-	}
-	.flex-block {
-		display: block;
-	}
-
-}
