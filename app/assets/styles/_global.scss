@@ -94,3 +94,25 @@ textarea {
     outline: none !important;
     padding: 0 10px;
 }
+
+
+.orage {
+    background: #e1641f!important;
+}
+.grey {
+    background: #58595b!important;
+}
+.blue {
+    background: #1165a6!important;
+}
+.light-blue {
+    background: #2189c4!important;
+}
+
+.flex-block {
+    @include flex();
+}
+.top0 {
+    top: 0!important;
+}
+

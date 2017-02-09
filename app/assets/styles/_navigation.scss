@@ -22,13 +22,19 @@
 				width:20%;
 				padding-right:50px;
 				float:left;
-				> a{
+
+				> a,h3,h2,h1,h4{
 					text-transform: uppercase;
 					border-bottom: 1px solid $border-menu;
 					font-weight: $semi-bold;
 					padding:9px 0;
 					display: block;
+					line-height: 1.428571429;
+					font-size: inherit;
 					margin-bottom: 20px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 					&:hover,&:focus,&:active {
 						color: $link-color;
 					}
@@ -92,4 +98,30 @@
 
 .mm-opened {
 	display: block!important;
+}
+
+
+@include xs {
+	.navbar-brand {
+		height: auto;
+		position: relative;
+		z-index:2;
+	}
+	html.mm-pagedim-black.mm-opening #mm-blocker, html.mm-pagedim-white.mm-opening #mm-blocker, html.mm-pagedim.mm-opening #mm-blocker {
+		background: #d96220;
+		opacity:0.8;
+	}
+	#menu-mobile {
+		#mm-1 {
+			.mm-navbar {
+			//	display: none;
+			}
+		}
+		& > .mm-panels {
+			& > .mm-panel {
+				margin-top: 40px;
+			}
+		}
+	}
+
 }

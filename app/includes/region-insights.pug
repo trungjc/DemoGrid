@@ -1,37 +1,23 @@
-.filter-box
+.filter-box#Filters
 	.button-filter.dropdown
 		select.selectpicker
-			option(value=".Mining_and_construction")  Mining and construction
 			option(value=".Industry") Industry
 			option(value=".Business") Business
+			option(value=".Mining_and_construction")  Mining and construction
 
 	.button-filter.dropdown
-		a(data-toggle="dropdown" href="#" )
-			| Topic
-		ul.dropdown-menu 
-			li
-				a(class="filter" data-filter=".Mining_and_construction")
-					| Mining and construction
-			li
-				a(class="filter" data-filter=".Industry")
-					| Industry
-			li
-				a(class="filter" data-filter=".Business")
-					| Industry
+		select.selectpicker
+			option(value=".topic")  Topic
+			option(value=".major_industries") Major Industries
+			option(value=".topic2") Topic 2
+
 	.button-filter.dropdown
-		a(data-toggle="dropdown" href="#" )
-			| Region
-		ul.dropdown-menu 
-			li
-				a(class="filter" data-filter=".Mining_and_construction")
-					| Mining and construction
-			li
-				a(class="filter" data-filter=".Industry")
-					| Industry
-			li
-				a(class="filter" data-filter=".Business")
-					| Business
-.filter-label
+		select.selectpicker
+			option(value=".region")  Region
+			option(value=".region1") Region 1
+			option(value=".region2") Region 2
+
+.filter-label.text-center
 	| Insights by Industry
 
 #grid-masonry.grid-masonry
@@ -39,7 +25,7 @@
 		.panel
 			.image
 				img(src="assets/images/img01.png")
-			.category
+			.tag
 				a.orage(href="")
 					| Mining and construction
 			.panel-body
@@ -53,7 +39,7 @@
 	.grid-item.mix.Industry
 		.panel
 			.image
-			.category
+			.tag
 				a.blue(href="")  
 					| Industry
 			.panel-body
@@ -64,12 +50,12 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.mix.Business
+	.grid-item.mix.region1.Mining_and_construction.Industry
 		.panel
 			.image
 				img(src="assets/images/img01.png")
-			.category
-				a.grey(href="") Business
+			.tag
+				a.grey(href="") major_industries region1 Industry
 			.panel-body
 				h3
 					a(href="") Lorem ipsum dolor sit amet
@@ -78,11 +64,11 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.mix.Mining_and_construction
+	.grid-item.mix.Mining_and_construction.region1
 		.panel
 			.image
 				img(src="assets/images/img01.png")
-			.category
+			.tag
 				a.orage(href="")
 					| Mining and construction
 			.panel-body
@@ -93,12 +79,12 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-	.grid-item.mix.Industry
+	.grid-item.mix.topic2
 		.panel
 			.image
-			.category
+			.tag
 				a.light-blue(href="")  
-					| Industry
+					| topic1
 			.panel-body
 				h3
 					a(href="") Skills shortage in refrigeration mechanics to be filled by former Inpex workers
@@ -111,7 +97,8 @@
 		.panel
 			.image
 				img(src="assets/images/img01.png")
-			.category
+				a.play(href="" title="play video") 
+			.tag
 				a.grey(href="") Business
 			.panel-body
 				h3
@@ -121,6 +108,6 @@
 			.panel-footer
 				span.author Article by Scott Cain 
 				span.date 21 Nov. 2016
-.loadmore
+.loadmore.text-center
 	a#view-more(href="")
 		| View more

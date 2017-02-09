@@ -110,7 +110,10 @@ var FE = {
             }); 
             $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                 e.target; // newly activated tab
-                $slick.slick('unslick');
+                if ($slick.hasClass('slick-initialized')) {
+                  $slick.slick('unslick');
+                }
+                
                 $slick.slick({
                     infinite: true,
                     arrows: true,
@@ -118,13 +121,15 @@ var FE = {
                     dots: false,
                     slidesToShow: 1
                 }); 
-                $('.help-sticker').unslick();
+               /* if ($slick.hasClass('slick-initialized')) {
+                   $slick.slick('unslick');
+                }*/
                 e.relatedTarget; // previous active tab
             })    
         },
         selectpickerStyle: function() {
              $('.selectpicker').selectpicker({
-                  style: 'btn-info',
+                  style: 'btn-default',
                   size: 4
                 });
 
@@ -148,29 +153,32 @@ var FE = {
         viewMore: function() {
             $('#view-more').on('click',function(e){
                 e.preventDefault();
-
-                var html='<div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="category"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div><div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="category"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div>';
+                var html='<div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="tag"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div><div class="grid-item mix Business"><div class="panel"><div class="image"><img src="assets/images/img01.png"></div><div class="tag"><a class="grey" href="">Business</a></div><div class="panel-body"><h3><a href="">Lorem ipsum dolor sit amet</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p></div><div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div></div></div>';
                 var container =  $('#grid-masonry');
                 container.append(html);
                 //destroy mixItup 
                 container.mixItUp('destroy');
-                //init mixitup function again
+                //init mixitup  again
                 FE.global.filterData();
             });
         },
         menuMobile: function() {
-          
-                $('#menu-mobile').mmenu({
-                    offCanvas : {
-                        position : "left", // changing this alters the position of the menu
-                        zposition : "front"
+            $('#menu-mobile').mmenu({
+                extensions: ['pagedim'],
+                offCanvas : {
+                    position : 'left', // changing this alters the position of the menu
+                    zposition : 'front'
+                },navbar: {
+                        title: ''
                     }
-                });
-                var API = $('#menu-mobile').data('mmenu');
-                $('#menu-button').click(function() {
-                    API.open();
-                })
-                
+            });
+            var API = $('#menu-mobile').data('mmenu');
+            $('#menu-button').click(function() {
+                API.open();
+            })
+
+            var logoMobile = $('.navbar-header .navbar-brand').clone(); 
+            $('#menu-mobile').prepend(logoMobile);   
         },
         sliderArticle: function() {
            $('#consultants .list-consultants').slick({
@@ -190,7 +198,33 @@ var FE = {
                 ],
             });
         },
-        
+        tabSlick: function() {
+            var slick = $('.tab-section .nav-tabs');
+            // just covert tab to slick when be at mobile
+            if(isMobileScreen()) {
+                 slick.slick({
+                    arrows: true,
+                    autoplay: false,
+                    dots: false,
+                  //  centerMode: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                });
+
+                $('.nav-tabs .slick-slide').on('click',function() {
+                    $('.nav-tabs .slick-slide').removeClass('active');
+                    $(this).find('a').trigger('click');
+                    
+                });
+                
+            } else {
+                if (slick.hasClass('slick-initialized')) {
+                   slick.slick('unslick');
+                }
+                
+            }
+            
+        },
         validateForm: function() {
             $( '#contact-form' ).validate( {
               rules: {
@@ -222,16 +256,13 @@ var FE = {
             FE.global.menuMobile();
             FE.global.filterData();
             FE.global.validateForm();
+            FE.global.tabSlick();
         },
         loaded: function() {
-           // FE.global.slider();
-           //FE.global.sliderArticle();
            FE.global.menuMobile();
         },
         resize: function() {
-          //   FE.global.menuMobile();
-         // console.log('reszing....');
-          //FE.global.masonry();
+             //FE.global.tabSlick();
         },
         scroll: function() {
             

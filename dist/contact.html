@@ -8,18 +8,24 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="assets/styles/main.css">
     <script src="assets/scripts/modernizr.js"></script>
   </head>
   <body class="Contact">
     <div id="menu-mobile" style="display:none;">
-      <div class="navbar-header"><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a></div>
       <ul>
         <li class="menu-item"><a href="#">About Us</a>
         </li>
         <li class="menu-item"><a href="#">What we do</a>
           <ul class="sub-menu">
             <li class="menu-item"><a href="#">Item 1 </a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 2</a>
               <ul class="sub-menu">
@@ -30,10 +36,28 @@
               </ul>
             </li>
             <li class="menu-item"><a href="#">Item 3</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 4</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 5</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -50,58 +74,60 @@
     <div id="page">
       <header class="header" id="header">
         <nav class="navbar" id="slide-nav">
-          <div class="container">
-            <div class="row">
+          <div class="container-fluid">
+            <div class="rows">
               <div class="navbar-header">
                 <button class="navbar-toggle" id="menu-button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a>
               </div>
               <div class="collapse navbar-collapse" id="menu_nav">
-                <ul class="nav navbar-nav pull-right">
+                <ul class="nav navbar-nav pull-right no-bullet">
                   <li class="menu-item"><a href="#">About Us</a>
                   </li>
                   <li class="menu-item dropdown parent"><a data-toggle="dropdown" href="#">What we do</a>
-                    <ul class="dropdown-menu sub-menu level1">
-                      <li class="menu-item"><a href="#">Item 1 </a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 2</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 3</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 4</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 5</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <div class="dropdown-menu sub-menu level1">
+                      <ul class="no-bullet">
+                        <li class="menu-item"><a href="#">Item 1 </a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 2</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 3</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 4</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 5</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="menu-item"><a href="#">Industry Trends</a>
                   </li>
@@ -117,7 +143,7 @@
           </div>
         </nav>
       </header>
-      <section id="breadcrumb">
+      <section class="bg-container" id="breadcrumb">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -162,7 +188,7 @@
                   </div>
                   <div class="form-group">
                     <button class="submit btn btn-default" type="submit">
-                       Submit									</button>
+                       Submit</button>
                   </div>
                 </form>
               </div>
@@ -170,9 +196,9 @@
           </div>
         </div>
       </section>
-      <section class="region region-footer">
+      <section class="region">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row region-footer flex-block">
             <div class="col-xs-12 col-sm-4 col-md-4">
               <div class="block">
                 <h3>Stay in touch</h3>

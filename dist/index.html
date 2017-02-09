@@ -8,18 +8,24 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="assets/styles/main.css">
     <script src="assets/scripts/modernizr.js"></script>
   </head>
   <body class="home">
     <div id="menu-mobile" style="display:none;">
-      <div class="navbar-header"><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a></div>
       <ul>
         <li class="menu-item"><a href="#">About Us</a>
         </li>
         <li class="menu-item"><a href="#">What we do</a>
           <ul class="sub-menu">
             <li class="menu-item"><a href="#">Item 1 </a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 2</a>
               <ul class="sub-menu">
@@ -30,10 +36,28 @@
               </ul>
             </li>
             <li class="menu-item"><a href="#">Item 3</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 4</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
             <li class="menu-item"><a href="#">Item 5</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Item A</a></li>
+                <li class="menu-item"><a href="#">Item B</a></li>
+                <li class="menu-item"><a href="#">Item C</a></li>
+                <li class="menu-item"><a href="#">Item D</a></li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -50,58 +74,60 @@
     <div id="page">
       <header class="header" id="header">
         <nav class="navbar" id="slide-nav">
-          <div class="container">
-            <div class="row">
+          <div class="container-fluid">
+            <div class="rows">
               <div class="navbar-header">
                 <button class="navbar-toggle" id="menu-button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png"></a>
               </div>
               <div class="collapse navbar-collapse" id="menu_nav">
-                <ul class="nav navbar-nav pull-right">
+                <ul class="nav navbar-nav pull-right no-bullet">
                   <li class="menu-item"><a href="#">About Us</a>
                   </li>
                   <li class="menu-item dropdown parent"><a data-toggle="dropdown" href="#">What we do</a>
-                    <ul class="dropdown-menu sub-menu level1">
-                      <li class="menu-item"><a href="#">Item 1 </a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 2</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 3</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 4</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item"><a href="#">Item 5</a>
-                        <ul class="sub-menu level2">
-                          <li class="menu-item"><a href="#">Item A</a></li>
-                          <li class="menu-item"><a href="#">Item B</a></li>
-                          <li class="menu-item"><a href="#">Item C</a></li>
-                          <li class="menu-item"><a href="#">Item D</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <div class="dropdown-menu sub-menu level1">
+                      <ul class="no-bullet">
+                        <li class="menu-item"><a href="#">Item 1 </a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 2</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 3</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 4</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item 5</a>
+                          <ul class="sub-menu level2 no-bullet">
+                            <li class="menu-item"><a href="#">Item A</a></li>
+                            <li class="menu-item"><a href="#">Item B</a></li>
+                            <li class="menu-item"><a href="#">Item C</a></li>
+                            <li class="menu-item"><a href="#">Item D</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="menu-item"><a href="#">Industry Trends</a>
                   </li>
@@ -129,57 +155,70 @@
           </div>
         </div>
       </section>
-      <section class="help-region">
-        <div class="container">
+      <section class="section help-region"><span class="slash"></span>
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
               <h3>How can we help you today?</h3>
               <div class="tab-section">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#employers">employers</a></li>
-                  <li><a data-toggle="tab" href="#employees">Employess</a></li>
-                  <li><a data-toggle="tab" href="#RTOs">RTOs</a></li>
-                  <li><a data-toggle="tab" href="#associations">Associations</a></li>
-                  <li><a data-toggle="tab" href="#career-advisors">Carrer Advisors</a></li>
+                  <li class="active"><a data-toggle="tab" href="#employers"><img class="icon" src="assets/images/employers-img.png">employers</a></li>
+                  <li><a data-toggle="tab" href="#employees"><img class="icon" src="assets/images/employees-img.png">Employess</a></li>
+                  <li><a data-toggle="tab" href="#RTOs"><img class="icon" src="assets/images/rtos-img.png">RTOs</a></li>
+                  <li><a data-toggle="tab" href="#associations"><img class="icon" src="assets/images/associations-img.png">Associations</a></li>
+                  <li><a data-toggle="tab" href="#career-advisors"><img class="icon" src="assets/images/career-advisors-img.png">Carrer Advisors</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane fade in active" id="employers">
-                    <div class="col-xs-12 col-md-4">
-                      <div class="help-sticker">
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="text-content">
-                        <h3>I’M LOOKING TO...</h3>
-                        <ul>
-                          <li> <a href="">Employ migrant workers</a></li>
-                          <li> <a href="">Get help with recruitment and retention</a></li>
-                          <li> <a href="">Find training opportunities for my staff</a></li>
-                          <li> <a href="">List a job as high demand</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="contact-info">
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                    <div class="row flex-block">
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="help-sticker">
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""> </a>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="text-content">
+                          <h3>I’M LOOKING TO...</h3>
+                          <ul>
+                            <li> <a href="#">Employ migrant workers</a></li>
+                            <li> <a href="#">Get help with recruitment and retention</a></li>
+                            <li> <a href="#">Find training opportunities for my staff</a></li>
+                            <li> <a href="#">List a job as high demand</a></li>
+                            <li><a href="#">Find skilled workers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="contact-info">
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Learn more about the value of VET in the workplace.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href="#"><i class="fa fa-angle-right"> </i></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -187,42 +226,55 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="employees">
-                    <div class="col-xs-12 col-md-4">
-                      <div class="help-sticker">
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="text-content">
-                        <h3>I’M LOOKING TO...</h3>
-                        <ul>
-                          <li> <a href="">Employ migrant workers</a></li>
-                          <li> <a href="">Get help with recruitment and retention</a></li>
-                          <li> <a href="">Find training opportunities for my staff</a></li>
-                          <li> <a href="">List a job as high demand</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="contact-info">
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                    <div class="row flex-block">
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="help-sticker">
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="text-content">
+                          <h3>I’M LOOKING TO Tab2</h3>
+                          <ul>
+                            <li> <a href="#">Employ migrant workers</a></li>
+                            <li> <a href="#">Get help with recruitment and retention</a></li>
+                            <li> <a href="#">Find training opportunities for my staff</a></li>
+                            <li> <a href="#">List a job as high demand</a></li>
+                            <li><a href="#">Find skilled workers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="contact-info">
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Learn more about the value of VET in the workplace.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href="#"><i class="fa fa-angle-right"> </i></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -230,42 +282,55 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="RTOs">
-                    <div class="col-xs-12 col-md-4">
-                      <div class="help-sticker">
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="text-content">
-                        <h3>I’M LOOKING TO...</h3>
-                        <ul>
-                          <li> <a href="">Employ migrant workers</a></li>
-                          <li> <a href="">Get help with recruitment and retention</a></li>
-                          <li> <a href="">Find training opportunities for my staff</a></li>
-                          <li> <a href="">List a job as high demand</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="contact-info">
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                    <div class="row flex-block">
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="help-sticker">
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="text-content">
+                          <h3>I’M LOOKING TO Tab3</h3>
+                          <ul>
+                            <li> <a href="#">Employ migrant workers</a></li>
+                            <li> <a href="#">Get help with recruitment and retention</a></li>
+                            <li> <a href="#">Find training opportunities for my staff</a></li>
+                            <li> <a href="#">List a job as high demand</a></li>
+                            <li><a href="#">Find skilled workers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="contact-info">
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Learn more about the value of VET in the workplace.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -273,42 +338,55 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="associations">
-                    <div class="col-xs-12 col-md-4">
-                      <div class="help-sticker">
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="text-content">
-                        <h3>I’M LOOKING TO...</h3>
-                        <ul>
-                          <li> <a href="">Employ migrant workers</a></li>
-                          <li> <a href="">Get help with recruitment and retention</a></li>
-                          <li> <a href="">Find training opportunities for my staff</a></li>
-                          <li> <a href="">List a job as high demand</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="contact-info">
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                    <div class="row flex-block">
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="help-sticker">
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="text-content">
+                          <h3>I’M LOOKING TO Tab4</h3>
+                          <ul>
+                            <li> <a href="#">Employ migrant workers</a></li>
+                            <li> <a href="#">Get help with recruitment and retention</a></li>
+                            <li> <a href="#">Find training opportunities for my staff</a></li>
+                            <li> <a href="#">List a job as high demand</a></li>
+                            <li><a href="#">Find skilled workers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="contact-info">
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Learn more about the value of VET in the workplace.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href="#"><i class="fa fa-angle-right"> </i></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -316,42 +394,55 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="career-advisors">
-                    <div class="col-xs-12 col-md-4">
-                      <div class="help-sticker">
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                        <div><img src="assets/images/help-img01.png" alt="">
-                          <p>Helping build a skilled workforce for Territory businesses</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="text-content">
-                        <h3>I’M LOOKING TO...</h3>
-                        <ul>
-                          <li> <a href="">Employ migrant workers</a></li>
-                          <li> <a href="">Get help with recruitment and retention</a></li>
-                          <li> <a href="">Find training opportunities for my staff</a></li>
-                          <li> <a href="">List a job as high demand</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                      <div class="contact-info">
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Learn more about the value of VET in the workplace.</p><a class="more" href=""></a>
+                    <div class="row flex-block">
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="help-sticker">
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="help-slicker-content">
+                              <div class="img"><img src="assets/images/help-img01.png" alt=""></div>
+                              <div class="text"> 
+                                <p>Helping build a skilled workforce for Territory businesses</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="media">
-                          <div class="media-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
-                          <div class="media-body">
-                            <div class="text">
-                              <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href=""></a>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="text-content">
+                          <h3>I’M LOOKING TO Tab5</h3>
+                          <ul>
+                            <li> <a href="#">Employ migrant workers</a></li>
+                            <li> <a href="#">Get help with recruitment and retention</a></li>
+                            <li> <a href="#">Find training opportunities for my staff</a></li>
+                            <li> <a href="#">List a job as high demand</a></li>
+                            <li><a href="#">Find skilled workers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col-sm-12">
+                        <div class="contact-info">
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact01.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Learn more about the value of VET in the workplace.</p><a class="more" href="#"><i class="fa fa-angle-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="contact-info-item">
+                            <div class="contact-info-item-left media-middle"><img class="media-object" src="assets/images/contact02.png" alt=""></div>
+                            <div class="contact-info-item-body">
+                              <div class="text">
+                                <p>Improve your business.Talk to an Industry Engagement Officer today.</p><a class="more" href="#"><i class="fa fa-angle-right"> </i></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -364,40 +455,41 @@
           </div>
         </div>
       </section>
-      <section class="new-block" id="insights">
+      <section class="section insights-region" id="insights">
+        <div class="slash grey top0"></div>
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12">
               <h3>Insights</h3>
-              <div class="filter-box">
-                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Industry</a>
-                  <ul class="dropdown-menu"> 
-                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
-                  </ul>
+              <div class="filter-box" id="Filters">
+                <div class="button-filter dropdown">
+                  <select class="selectpicker">
+                    <option value=".Industry">Industry</option>
+                    <option value=".Business">Business</option>
+                    <option value=".Mining_and_construction"> Mining and construction</option>
+                  </select>
                 </div>
-                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Topic</a>
-                  <ul class="dropdown-menu"> 
-                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
-                  </ul>
+                <div class="button-filter dropdown">
+                  <select class="selectpicker">
+                    <option value=".topic"> Topic</option>
+                    <option value=".major_industries">Major Industries</option>
+                    <option value=".topic2">Topic 2</option>
+                  </select>
                 </div>
-                <div class="button-filter dropdown"><a data-toggle="dropdown" href="#">Region</a>
-                  <ul class="dropdown-menu"> 
-                    <li><a href="javascript:void(0)" data-filter=".Mining_and_construction">Mining and construction</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Industry">Industry</a></li>
-                    <li><a href="javascript:void(0)" data-filter=".Business">Business</a></li>
-                  </ul>
+                <div class="button-filter dropdown">
+                  <select class="selectpicker">
+                    <option value=".region"> Region</option>
+                    <option value=".region1">Region 1</option>
+                    <option value=".region2">Region 2</option>
+                  </select>
                 </div>
               </div>
-              <div class="filter-label">Insights by Industry</div>
-              <div class="grid">
-                <div class="grid-item Mining_and_construction">
+              <div class="filter-label text-center">Insights by Industry</div>
+              <div class="grid-masonry" id="grid-masonry">
+                <div class="grid-item mix Mining_and_construction">
                   <div class="panel">
                     <div class="image"><img src="assets/images/img01.png"></div>
-                    <div class="category"><a class="orage" href="">Mining and construction</a></div>
+                    <div class="tag"><a class="orage" href="">Mining and construction</a></div>
                     <div class="panel-body">
                       <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
@@ -405,10 +497,10 @@
                     <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
-                <div class="grid-item Industry">
+                <div class="grid-item mix Industry">
                   <div class="panel">
                     <div class="image"></div>
-                    <div class="category"><a class="blue" href="">
+                    <div class="tag"><a class="blue" href="">
                          Industry</a></div>
                     <div class="panel-body">
                       <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
@@ -417,10 +509,10 @@
                     <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
-                <div class="grid-item Business">
+                <div class="grid-item mix region1 Mining_and_construction Industry">
                   <div class="panel">
                     <div class="image"><img src="assets/images/img01.png"></div>
-                    <div class="category"><a class="grey" href="">Business</a></div>
+                    <div class="tag"><a class="grey" href="">major_industries region1 Industry</a></div>
                     <div class="panel-body">
                       <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
@@ -428,10 +520,10 @@
                     <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
-                <div class="grid-item Mining_and_construction">
+                <div class="grid-item mix Mining_and_construction region1">
                   <div class="panel">
                     <div class="image"><img src="assets/images/img01.png"></div>
-                    <div class="category"><a class="orage" href="">Mining and construction</a></div>
+                    <div class="tag"><a class="orage" href="">Mining and construction</a></div>
                     <div class="panel-body">
                       <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
@@ -439,11 +531,11 @@
                     <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
-                <div class="grid-item Industry">
+                <div class="grid-item mix topic2">
                   <div class="panel">
                     <div class="image"></div>
-                    <div class="category"><a class="light-blue" href="">
-                         Industry</a></div>
+                    <div class="tag"><a class="light-blue" href="">
+                         topic1</a></div>
                     <div class="panel-body">
                       <h3><a href="">Skills shortage in refrigeration mechanics to be filled by former Inpex workers</a></h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
@@ -451,10 +543,10 @@
                     <div class="panel-footer"><span class="author">Article by Scott Cain </span><span class="date">21 Nov. 2016</span></div>
                   </div>
                 </div>
-                <div class="grid-item Business">
+                <div class="grid-item mix Business">
                   <div class="panel">
-                    <div class="image"><img src="assets/images/img01.png"></div>
-                    <div class="category"><a class="grey" href="">Business</a></div>
+                    <div class="image"><img src="assets/images/img01.png"><a class="play" href="" title="play video"> </a></div>
+                    <div class="tag"><a class="grey" href="">Business</a></div>
                     <div class="panel-body">
                       <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus mauris sit amet libero commodo fringilla vel a ipsum. Vestibulum bibendum tincidunt ipsum...</p>
@@ -463,12 +555,12 @@
                   </div>
                 </div>
               </div>
-              <div class="loadmore"><a href="">View more</a></div>
+              <div class="loadmore text-center"><a id="view-more" href="">View more</a></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="consultants" id="consultants">
+      <section class="section consultants" id="consultants">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -512,30 +604,30 @@
           </div>
         </div>
       </section>
-      <section class="industry" id="industry">
+      <section class="section industry" id="industry"><span class="slash"></span>
         <h3>Industry Trends</h3>
         <div class="container">
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="text">
+              <div class="industry-box">
                 <h4><sup>$</sup><span>6</span>b</h4>
                 <p>Mineral & Petroleum<br>Production P/A</p>
               </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="text">
+              <div class="industry-box">
                 <h4><span>25%</span>increase</h4>
                 <p>In exports between<br>2010 - 2015</p>
               </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="text">
-                <h4><span>213,17</span></h4>
+              <div class="industry-box">
+                <h4><span>13,174</span></h4>
                 <p>People employed<br>across the industries</p>
               </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="text">
+              <div class="industry-box">
                 <h4><sup>$</sup><span>237.5</span>m</h4>
                 <p>Dispersed in<br>royalties</p>
               </div>
