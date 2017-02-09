@@ -231,8 +231,12 @@
 		display: flex;
 		.text {
 			min-height: 0;
-			p {
-				min-height: 85px;
+			position: relative;
+			padding-bottom: 18px;
+			.more {
+				position: absolute;
+				left: 0;
+				bottom: 0;
 			}
 		}
 		 .contact-info-item {
@@ -260,6 +264,28 @@
 
 			padding: 12px 20px 12px 12px;
 			font-size: 12px;
+		}
+	}
+	.industry {
+		h3 {
+			font-size: 25px;
+		}
+		.industry-box {
+			margin: 20px 0;
+			p {
+				font-size: 12px;
+			}
+		}
+		h4 {
+			padding: 0 0 10px 0;
+			margin: 0 0 10px 0;
+			font-size: 15px;
+			sup {
+				font-size: 15px;
+			}
+			span  {
+				font-size: 30px;
+			}
 		}
 	}
 	.more {

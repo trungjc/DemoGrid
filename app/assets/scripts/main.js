@@ -130,7 +130,8 @@ var FE = {
         selectpickerStyle: function() {
              $('.selectpicker').selectpicker({
                   style: 'btn-default',
-                  size: 4
+                  size: 4,
+                  mobile: true,
                 });
 
          },
@@ -192,6 +193,8 @@ var FE = {
                         breakpoint: 767,
                           settings: {
                             slidesToShow: 1,
+                            centerMode: true,
+                            focusOnSelect: true,
                             slidesToScroll: 1,
                           }
                     }
@@ -202,18 +205,22 @@ var FE = {
             var slick = $('.tab-section .nav-tabs');
             // just covert tab to slick when be at mobile
             if(isMobileScreen()) {
+                 if (slick.hasClass('slick-initialized')) {
+                    slick.slick('unslick');
+                 }
                  slick.slick({
                     arrows: true,
                     autoplay: false,
                     dots: false,
-                  //  centerMode: true,
+                    centerMode: true,
                     slidesToShow: 3,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
                 });
 
                 $('.nav-tabs .slick-slide').on('click',function() {
                     $('.nav-tabs .slick-slide').removeClass('active');
-                    $(this).find('a').trigger('click');
+                  //  $(this).find('a').trigger('click');
                     
                 });
                 
