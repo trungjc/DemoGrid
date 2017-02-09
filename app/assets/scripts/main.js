@@ -192,8 +192,10 @@ var FE = {
                     {
                         breakpoint: 767,
                           settings: {
-                            slidesToShow: 1,
-                            centerMode: true,
+                            slidesToShow: 3,
+                           centerMode: true,
+                           variableWidth: true,
+                           centerPadding: '60px',
                             focusOnSelect: true,
                             slidesToScroll: 1,
                           }

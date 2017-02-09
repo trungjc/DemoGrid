@@ -245,3 +245,35 @@
 	}
 }
 
+@include xs {
+	.loadmore a{
+		font-size: 14px;
+
+		&:after {
+			height: 2px;
+			bottom: -10px;
+		}
+	}
+	.filter-box {
+		margin: 0 auto;
+		.button-filter {
+			margin: 5px 2px;
+			max-width: 100px;
+			.btn {
+				min-width: 100px;
+				max-width: 100px!important;
+				&:after {
+					width: 8px;
+					height: 8px;
+					right: 10px;
+				}
+				span {
+					white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				}
+				
+			}
+		}
+	}
+}
